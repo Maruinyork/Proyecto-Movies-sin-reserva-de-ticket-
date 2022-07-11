@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: "Poppins";
+}
+
+#home #carousel-news-movies {
+  height: 95vh;
+}
+
+#home .list-news-movies {
+  height: 100%;
+}
+#home .carousel-item {
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+#home .carousel-caption {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px 20px;
+}
+
+#home .now-playing h2,
+#home .top-rated-playing h2 {
+  text-align: center;
+  padding: 15px 0;
+  margin: 50px 0 0 0;
+  background: goldenrod;
+  color: #fff;
+}
+#home .now-playing__list li,
+#home .top-rated-playing__list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#home .now-playing__list li h3,
+#home .top-rated-playing__list li h3 {
+  margin: 0;
+  font-size: 18px;
+}
+#home .now-playing__list img,
+#home .top-rated-playing__list img {
+  width: 35%;
+  height: 35%;
+}
+
+.col-custom:hover {
+  transform: scale(105%);
+}
+
+.card-body {
+  background: #000;
+  border: 1px solid goldenrod;
+}
+
+
+.card-body h4 {
+  font-size: 15px;
+  font-weight: bold;
+  color: rgb(240, 186, 50);
+}
+
+.col-custom a {
+  text-decoration: none;
+}
+
+.text-center {
+  color: goldenrod;
+}
+
+.custom-card {
+  margin-bottom: 20px;
+  max-height: 75vh;
+  border: 1px solid #000;
+}
+
+.btn-dark {
+  background-color: goldenrod;
+  color: rgb(19, 19, 19);
+  padding: 10px;
+  border: 1px solid #000;
+}
+
+.btn-dark:hover {
+  background-color: transparent;
+  color: goldenrod;
+  transform: scale(1.1);
+  border: 1px solid goldenrod;
+}
+
+.list-group-item a {
+  text-align: right;
+  font-size: 1.2em;
+  color: #000;
+  text-decoration: none;
+}
+
+.list-group-item img {
+  margin-top: 20px;
+}
+
+.list-group-item img:hover {
+  transform: scale(1.1);
+}
+
+.movie-info__data {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 30px 30px;
+  color: goldenrod;
+}
+
+@media screen and (max-width: 768px) {
+  #home #carousel-news-movies {
+    height: 125vh;
+  }
+
+  .list-group-item h5 {
+    font-size: 1em;
+  }
+
+  .btn-dark {
+    background-color: transparent;
+    padding: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+    text-shadow: white 1px 1px;
+  }
+}

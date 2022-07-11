@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Movies</title>
+        <!--Favicon-->
+        <link rel="shortcut icon" href="./img/popcorn.ico">
+        <!--Fontawesome-->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <!-- Bootstrap CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+            crossorigin="anonymous">
+        <!--CSS -->
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/estilo.css">
+    </head>
+
+    <body id="home">
+        <header>
+            <section class="headerPages">
+                <div class="header-section container">
+                    <div class="logo-header">
+                        <img class="logo" src="" alt="">
+                        <a href="../index.html" class="movie__title">CINE APP</a>
+                    </div>
+                    <nav class="nav-menu">
+                        <input type="checkbox" id="check">
+
+                        <label for="check" class="checkbtn">
+                            <i class="menu-icon"><svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 448 512"><path d="M0 96C0 78.33
+                                        14.33 64 32 64H416C433.7 64 448 78.33
+                                        448 96C448 113.7 433.7 128 416
+                                        128H32C14.33 128 0 113.7 0 96zM0 256C0
+                                        238.3 14.33 224 32 224H416C433.7 224 448
+                                        238.3 448 256C448 273.7 433.7 288 416
+                                        288H32C14.33 288 0 273.7 0 256zM416
+                                        448H32C14.33 448 0 433.7 0 416C0 398.3
+                                        14.33 384 32 384H416C433.7 384 448 398.3
+                                        448 416C448 433.7 433.7 448 416 448z" /></svg></i>
+                            </label>
+
+                            <ul>
+                                <li><a href="index.html">Inicio</a></li>
+                                <li><a href="./pages/playing.html">Estrenos</a></li>
+                                <li><a href="./pages/searching.html">Busqueda</a></li>
+                            </ul>
+                        </nav>
+                    </section>
+        </header>
+
+                    <div id="carousel-news-movies" class="carousel slide"
+                        data-bs-ride="carousel">
+                        <div class="carousel-inner list-news-movies"></div>
+                    </div>
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12 col-lg-6 now-playing">
+                                <h2>TOP 3 | Peliculas del momento</h2>
+                                <ul class="list-group list-group-flush
+                                    now-playing__list"></ul>
+                            </div>
+
+                            <div class="col-sm-12 col-lg-6 top-rated-playing">
+                                <h2>Top 3 | Clásicos de todos los tiempos</h2>
+                                <ul class="list-group list-group-flush
+                                    top-rated-playing__list"></ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--<section class="banner">
+                        <img src="img/banner.wepb.webp" alt="" class="img-fluid">
+                    </section>-->
+
+               <!--- <section class="interactivo">
+                      <div class="movie-container">
+                        <h2>Disfruta de las mejores peliculas</h2>
+                        <h3>Cotizador online</h3>
+                        <h4>Elegi la pelicula:</h4>
+                        <select id="movie">
+                          <option value="1000">Top Gun Maverick ($1000)</option>
+                          <option value="1150">Jurassic World Dominio ($1150)</option>
+                          <option value="900">ESTRENO! Lightyear ($900)</option>
+                          <option value="1000">Dr Strange, Multiverso de Locura ($1000)</option>
+                          <option value="800">ESTRENO! Minions: nace un villano ($800)</option>
+                        </select>
+                      </div>
+                  
+                      <div class="containerSeat">
+                        <div class="row">
+                          <div class="seat"></div>
+                          <div class="seat"></div>
+                          <div class="seat"></div>
+                          <div class="seat"></div>
+                          <div class="seat"></div>
+                          <div class="seat"></div>
+                          <div class="seat"></div>
+                          <div class="seat"></div>
+                        </div>
+                        <div class="row">
+                          <div class="seat"></div>
+                          <div class="seat"></div>
+                          <div class="seat"></div>
+                          <div class="seat"></div>
+                          <div class="seat"></div>
+                          <div class="seat"></div>
+                          <div class="seat"></div>
+                          <div class="seat"></div>
+                        </div>
+                  
+                        <div class="row">
+                          <div class="seat"></div>
+                          <div class="seat"></div>
+                          <div class="seat"></div>
+                          <div class="seat"></div>
+                          <div class="seat"></div>
+                          <div class="seat"></div>
+                          <div class="seat"></div>
+                          <div class="seat"></div>
+                        </div>
+                  
+                        <div class="row">
+                          <div class="seat"></div>
+                          <div class="seat"></div>
+                          <div class="seat"></div>
+                          <div class="seat"></div>
+                          <div class="seat"></div>
+                          <div class="seat"></div>
+                          <div class="seat"></div>
+                          <div class="seat"></div>
+                        </div>
+                  
+                        <div class="row">
+                          <div class="seat"></div>
+                          <div class="seat"></div>
+                          <div class="seat"></div>
+                          <div class="seat"></div>
+                          <div class="seat"></div>
+                          <div class="seat"></div>
+                          <div class="seat"></div>
+                          <div class="seat"></div>
+                  
+                        </div>
+                  
+                        <div class="row">
+                          <div class="seat"></div>
+                          <div class="seat"></div>
+                          <div class="seat"></div>
+                          <div class="seat"></div>
+                          <div class="seat"></div>
+                          <div class="seat"></div>
+                          <div class="seat"></div>
+                          <div class="seat"></div>
+                        </div>
+                      </div>
+                  
+                      <p class="selection">
+                        Has seleccionado <span id="cuenta">0</span> asientos por un precio de $<span
+                          id="total">0</span>
+                      </p>
+                      <article class="saludo">
+                        <h2>Reserva tu lugar en la sala</h2>
+                        <button class="boton"> <a href="./pages/login.html">Hace Click para empezar</a></button>
+                        <h3>¿Aún no sos CineFan?</h3>
+                        <a href="./pages/register.html">Registrate</a>
+                      </article>
+                    </section>-->
+
+                    <section class="banner">
+                        <img src="img/banner1.jpg" alt="" class="img-fluid">
+                    </section>
+                      
+
+                    <footer class="main-footer">
+                        <div class="footer__section">
+                            <h2 class="footer__title">Acerca de Cine app</h2>
+                            <p class="footer__txt">Se trata de un proyecto realizado para el curso de Javascript de Coderhouse. Se utilizo la API de la pagina The Movie DB.</p>
+                        </div>
+                        <div class="footer__section">
+                            <h2 class="footer__title">Ubicación</h2>
+                            <p class="footer__txt">Buenos Aires, Argentina</p>
+                            <h2 class="footer__title">Contacto</h2>
+                            <p class="footer__txt">Github: Maruinyork</p>
+                        </div>
+                       
+                        <div class="footer__section">
+                            <h2 class="footer__title">Enlaces rápidos</h2>
+                            <a href="index.html"class="footer__link">INICIO</a></p>
+                            <a href="./pages/playing.html"class="footer__link">ESTRENOS</a></p>
+                            <a href="./pages/searching.html"class="footer__link">BUSQUEDA</a></p>
+                        </div>
+                        <p class="copy">@2022. Maruinyork. Todos los derechos reservados</p>
+                    </footer>
+
+                    <!-- Option 1: Bootstrap Bundle with Popper -->
+                    <script
+                        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+                        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+                        crossorigin="anonymous"></script>
+                    <!--<script src="js/cotizador.js"></script>-->
+                    <script src="./js/main.js"></script>
+                </body>
+            </html>

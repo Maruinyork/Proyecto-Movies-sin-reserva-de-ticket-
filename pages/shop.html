@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title> ShowApp | Comprar entradas</title>
+        <!--Favicon-->
+        <link rel="shortcut icon" href="img/popcorn.ico">
+        <!--CSS-->
+        <link rel="stylesheet" href="../css/shop.css" />
+        <link rel="stylesheet" href="../css/estilo.css">
+    </head>
+    <body>
+        <a href="../index.html" class="atras">VOLVER</a>
+        <form target="_self">
+            <h1>Reservar entradas</h1>
+            <div>
+                <h3>Elegi tu espectaculo:</h3>
+            </div>
+            <div>
+                <select name="categoria" required>
+                    <option value="">Selecciona la categoria …</option>
+                    <option value="Pelicula">Pelicula</option>
+                    <option value="Obra de Teatro" disabled>Obra de Teatro</option>
+                </select>
+            </div>
+            <div id="movies">
+                <p><strong>Selecciona desde aqui el nombre del espectaculo o
+                        pelicula</strong></p>
+            </div>
+        
+            <select name="categoria2" required>
+                <option value="">Selecciona tu espectaculo…</option>
+                <option value="Top Gun Maverick">Top Gun Maverick | HOY 22:00|
+                    3D CASTELLANO</option>
+                <option value="Top Gun Maverick">Top Gun Maverick | VIE 22:00|
+                    3D SUBTITULADA</option>
+                <option value="Top Gun Maverick">Top Gun Maverick | SAB 22:00|
+                    4D E-MOTION SUBTITULADA</option>
+                <option value="Jurassic World Dominio">Jurassic World Dominio
+                    |HOY 17:45| 3D CASTELLANO</option>
+                <option value="Jurassic World Dominio">Jurassic World Dominio
+                    |VIE 20:00| 3D SUBTITULADA</option>
+                <option value="Jurassic World Dominio">Jurassic World Dominio
+                    |SAB 21:30| 3D SUBTITULADA</option>
+                <option value="Jurassic World Dominio">Jurassic World Dominio
+                    |SAB 22:00| 4D E-MOTION SUBTITULADA</option>
+                <option value="Lightyear">Lightyear | HOY 17:45| 3D CASTELLANO</option>
+                <option value="Lightyear">Lightyear | VIE 17:45| 3D SUBTITULADA</option>
+                <option value="Lightyear">Lightyear | SAB 17:45| 4D E-MOTION
+                    SUBTITULADA</option>
+                <option value="Dr Strange, Multiverso de Locura">Dr Strange
+                    Multiverso de Locura | HOY 20:00| 3D SUBTITULADA</option>
+                <option value="Dr Strange, Multiverso de Locura">Dr Strange
+                    Multiverso de Locura | VIE 20:00| 3D CASTELLANO</option>
+                <option value="Dr Strange, Multiverso de Locura">Dr Strange
+                    Multiverso de Locura | VIE 20:00| 3D SUBTITULADA</option>
+                <option value="Minions: nace un villano">Minions: nace un villano | HOY 17:45
+                    | 2D CASTELLANO</option>
+                <option value="Minions: nace un villano">Minions: nace un villano | VIE 20:00
+                    | 2D CASTELLANO</option>
+                <option value="Minions: nace un villano">Minions: nace un villano | VIE 20:00
+                    | 2D SUBTITULADA</option>
+            </select>
+
+            <div>
+                <label for="cantidad">Cantidad de entradas:</label>
+                <input name="cantidad" id="cantidad" class="input" type="number"
+                    min=1 max=10 required>
+            </div>
+
+            <div class="ages">
+                <p>Verifica si tenes descuento</p>
+                <input type="radio" name="age" id="adulto" value="adulto"
+                    checked><label for="adulto">Adulto</label><br>
+                <input type="radio" name="age" id="medium" value="estudiante"><label
+                    for="medium">Soy estudiante</label><br>
+                <input type="radio" name="age" id="big" value="grande"><label
+                    for="big">Soy jubilado</label><br><br>
+            </div>
+            
+            <div class="combos">
+                <img src="../img/popcorn.jpg">
+                <p id="cargarJSON"><b>Elegi y arma el combo</b><br>
+                    <p>Incluyen 2 latitas de gaseosa</p>
+                    <b>Promo</b> $1500 C/U </p>
+                <div class="combosCine"></div>
+            </div><br>
+            <div>
+            <h4>Elegi tus asientos</h4><br>
+            <ul class="case">
+              <li>
+                <div class="seat"></div>
+                <small>Libre</small>
+              </li>
+        
+              <li>
+                <div class="seat selected"></div>
+                <small>Seleccionado</small>
+              </li>
+        
+              <li>
+                <div class="seat occupied"></div>
+                <small>Ocupado</small>
+              </li>
+            </ul>
+        
+            <div class="containerSeat">
+              <div class="screen"></div>
+              <div class="row">
+                <div class="seat">A1</div>
+                <div class="seat">A2</div>
+                <div class="seat">A3</div>
+                <div class="seat">A4</div>
+                <div class="seat">A5</div>
+                <div class="seat">A6</div>
+                <div class="seat">A7</div>
+                <div class="seat">A8</div>
+              </div>
+              <div class="row">
+                <div class="seat">B1</div>
+                <div class="seat">B2</div>
+                <div class="seat">B3</div>
+                <div class="seat">B4</div>
+                <div class="seat">B5</div>
+                <div class="seat occupied">B6</div>
+                <div class="seat occupied">B7</div>
+                <div class="seat">B8</div>
+              </div>
+        
+              <div class="row">
+                <div class="seat">C1</div>
+                <div class="seat">C2</div>
+                <div class="seat">C3</div>
+                <div class="seat">C4</div>
+                <div class="seat">C5</div>
+                <div class="seat">C6</div>
+                <div class="seat occupied">C7</div>
+                <div class="seat occupied">C8</div>
+              </div>
+        
+              <div class="row">
+                <div class="seat">D1</div>
+                <div class="seat">D2</div>
+                <div class="seat">D3</div>
+                <div class="seat">D4</div>
+                <div class="seat">D5</div>
+                <div class="seat occupied">D6</div>
+                <div class="seat occupied">D7</div>
+                <div class="seat">D8</div>
+              </div>
+        
+              <div class="row">
+                <div class="seat">E1</div>
+                <div class="seat">E2</div>
+                <div class="seat occupied">E3</div>
+                <div class="seat occupied">E4</div>
+                <div class="seat">E5</div>
+                <div class="seat">E6</div>
+                <div class="seat">E7</div>
+                <div class="seat">E8</div>
+              </div>
+        
+              <div class="row">
+                <div class="seat">F1</div>
+                <div class="seat">F2</div>
+                <div class="seat">F3</div>
+                <div class="seat occupied">F4</div>
+                <div class="seat occupied">F5</div>
+                <div class="seat occupied">F6</div>
+                <div class="seat">F7</div>
+                <div class="seat">F8</div>
+              </div>
+            </div>
+            </div>
+
+
+            <div>
+                <input type="submit" id="send-button" name="send-button"
+                    class="button">
+                <input type="reset" value="Borrar" class="button">
+            </div>
+        </form>
+        <div class="container" id="container">
+            <input type="button" id="completar" class="button" value="Completar Compra">
+        </div>
+        
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>   
+        <script src="../js/shop.js"></script>
+        <script src="../js/seats.js"></script>
+    </body>
+</html>
