@@ -1,5 +1,5 @@
 const API_URL = "https://api.themoviedb.org";
-const API_KEY = "4680afa6426d42dd5e62aac310d2d6fc";
+const API_KEY = "fb37a91f7fb50c5584d5639d85e54***"; //**This is personal**
 let MOVIE_ID = "";
 
 document.addEventListener("DOMContentLoaded", () => {
