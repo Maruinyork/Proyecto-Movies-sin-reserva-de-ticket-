@@ -1,5 +1,5 @@
 const API_URL = "https://api.themoviedb.org"; //la constante sera usada para no tener que copiar toda la url
-const API_KEY = "fb37a91f7fb50c5584d5639d85e54***"; //**This is personal**
+const API_KEY = "fb37a91f7fb50c5584d5639d85e54b67"; //**This is personal**
 
 document.addEventListener("DOMContentLoaded", () => { //cuando la pagina este cargada llamara a las siguientes funciones:
     showPelisNuevas();
