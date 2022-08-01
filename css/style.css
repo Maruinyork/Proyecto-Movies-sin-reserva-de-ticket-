@@ -37,11 +37,19 @@ body {
   background: goldenrod;
   color: #fff;
 }
-#home .now-playing__list li,
 #home .top-rated-playing__list li {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  box-sizing: border-box;
+  padding: 10px;
+}
+#home .now-playing__list li{
+  padding: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
 }
 #home .now-playing__list li h3,
 #home .top-rated-playing__list li h3 {
@@ -51,7 +59,7 @@ body {
 #home .now-playing__list img,
 #home .top-rated-playing__list img {
   width: 35%;
-  height: 35%;
+  height: 30%;
 }
 
 .col-custom:hover {
